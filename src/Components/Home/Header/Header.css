@@ -1,0 +1,200 @@
+.header {
+  background-color: #fff;
+  padding: 10px 5%;
+}
+.search {
+  background-color: #efefef;
+  padding: 5px 10px;
+  padding-right: 20px;
+  gap: 5px;
+  border-radius: 50px;
+  width: 300px;
+}
+
+.settings {
+  position: relative;
+}
+
+.search input {
+  width: 100%;
+  outline: none;
+}
+.search input::placeholder {
+  color: #b1b1b1;
+}
+
+.search i {
+  color: #ccc;
+}
+
+.searchIconTwo,
+.settings .settingsIcons i,
+.settings .menu,
+.icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background-color: #f7f7f7;
+  font-size: 20px;
+  color: #b1b1b1;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.searchIconTwo,
+.settings .menu,
+.settings .settingsIcons i {
+  color: #1798fb;
+  background: none;
+}
+
+.searchIconTwo:hover,
+.settings .menu:hover,
+.settings .settingsIcons i:hover {
+  background-color: #f7f7f7;
+}
+
+.searchIconTwo {
+  display: none;
+}
+
+.settings .settingsIcons .user {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+.settings .settingsIcons .user img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Menu */
+.settings .newSettings {
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: 0.3s;
+  z-index: 10000;
+}
+.settings .newSettings .user {
+  display: block;
+  width: 100%;
+  background-color: #d5f0fc;
+  padding: 10px 0 5px 0;
+  margin: auto;
+}
+.settings .newSettings .user img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+}
+
+.settings .newSettings {
+  background-color: #fff;
+  width: 250px;
+  right: calc(0px - 32px);
+  position: absolute;
+  top: calc(100% + 15px);
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.settings .newSettings .user > p {
+  background-color: #f7f7f7;
+  border-radius: 50px;
+  padding: 0 15px !important;
+  width: fit-content;
+  margin: 10px auto !important;
+  cursor: pointer;
+  color: #b1b1b1;
+  transition: 0.3s;
+}
+.settings .newSettings .user > p:hover {
+  color: #1798fb;
+}
+
+.settings .newSettings .links .link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  padding: 10px 10px 10px 20px;
+  color: #b1b1b1;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.settings .newSettings .links .link:hover {
+  color: #1798fb;
+  background-color: #f7f7f7;
+  transform: translateX(-5px);
+}
+
+.settings .newSettings .links .link p {
+  margin: 0;
+}
+
+/* End Menu */
+
+.icons a.active {
+  color: #1798fb;
+  background-color: rgba(1, 164, 239, 0.089);
+}
+
+.icons a:not(.active):hover {
+  background-color: rgba(1, 164, 239, 0.089);
+  /* color: #1798fb; */
+}
+.icons {
+  z-index: 10000;
+}
+.settings .menu {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .icons {
+    position: fixed;
+    width: 100%;
+    justify-content: center;
+    bottom: 0px;
+    left: 0;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 10px 5px 25px rgba(0, 0, 0, 0.5);
+  }
+  .settings .menu {
+    display: flex;
+  }
+  .settings .settingsIcons {
+    display: none !important;
+  }
+  .settings .newSettings.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .searchIconTwo {
+    display: flex;
+  }
+
+  .actions {
+    margin: 0 5px 0 auto !important;
+    transition: 0.3s;
+  }
+  .search {
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    width: 85%;
+    background-color: #fff;
+    transform: translateX(-50%) scale(0);
+    transition: 0.3s;
+    z-index: 100;
+  }
+  .search.active {
+    transform: translateX(-50%) scale(1);
+  }
+}

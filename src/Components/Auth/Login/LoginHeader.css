@@ -1,0 +1,29 @@
+.loginHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background-color: transparent;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  color: #0886bd !important;
+
+  cursor: pointer;
+}
+
+.logo span {
+  font-weight: 900;
+}
+
+.logo i {
+  font-weight: 500;
+  color: #00bfbf !important;
+}

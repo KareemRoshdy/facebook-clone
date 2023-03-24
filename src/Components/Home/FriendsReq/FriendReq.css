@@ -1,0 +1,126 @@
+.confirm,
+.friendsRequest {
+  background-color: #fff;
+  border-radius: 5px;
+  outline: none;
+  padding: 15px;
+  margin-bottom: 7px;
+}
+
+.topTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.topTitle .title {
+  font-weight: bold;
+}
+.topTitle a {
+  color: #179ffc;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.confirmBox {
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: 5px;
+}
+.confirmBox:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.requestBox:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.confirmBox,
+.requestBox .user {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.confirmBox .user .img,
+.requestBox .user .img {
+  width: 55px;
+  height: 55px;
+}
+
+.confirmBox .user .img img,
+.requestBox .user .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.confirmBox .user .userInfo .userName,
+.requestBox .user .user-info .userName {
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.confirmBox .user .userInfo .userName:hover,
+.requestBox .user .user-info .userName:hover {
+  color: #179ffc;
+}
+
+.confirmBox .user .userInfo .mutualFriend,
+.requestBox .user .user-info .mutualFriend {
+  color: #b1b1b1;
+  margin: 0 !important;
+}
+
+.confirmBox .icon {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: #333;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.confirmBox:hover .icon i {
+  transition: 0.3s;
+  color: #179ffc;
+}
+
+.requestBox .buttons {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.requestBox .buttons .btn {
+  flex: 1;
+  background-color: #179ffc;
+  border-radius: 50px;
+  padding: 7px 0;
+  border: none;
+  transition: 0.3s;
+}
+
+.requestBox .buttons .btn.confirm {
+  background: linear-gradient(to right, #334f80, #059ce3);
+  color: #fff;
+}
+
+.requestBox .buttons .btn.delete {
+  background-color: #dddddd;
+  color: #000;
+}
+
+.requestBox .buttons .btn:hover {
+  letter-spacing: 1px;
+}

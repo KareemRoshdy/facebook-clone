@@ -1,0 +1,114 @@
+.friendsComp {
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.friendsComp .user .bgImg {
+  height: 100px;
+}
+
+.friendsComp .user .userImg img,
+.friendsComp .user .bgImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.friendsComp .user .userInfo {
+  text-align: center;
+  margin-top: -50px;
+}
+
+.friendsComp .user .userInfo .userImg {
+  width: 75px;
+  height: 75px;
+  border-radius: 30px;
+  margin: 5px auto;
+  overflow: hidden;
+}
+
+.friendsComp .user .userInfo .userImg img {
+  border-radius: 30px;
+  border: 4px solid #fff;
+}
+
+.friendsComp .user .userInfo .userName h5 {
+  font-weight: 600;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.friendsComp .user .userInfo .userName h5:hover {
+  color: #1798fb;
+}
+
+.friendsComp .user .userInfo .nikName {
+  color: #777;
+  font-weight: bold;
+}
+
+.friendsComp .next {
+  padding: 10px 0px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.friendsComp .next .controls,
+.friendsComp .next .numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.friendsComp .next .numbers h6 {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.friendsComp .next .numbers p {
+  font-weight: 600;
+  font-size: 15px;
+  color: #9e9e9e;
+}
+
+.friendsComp .next .controls {
+  margin-bottom: 10px;
+}
+
+.friendsComp .next .controls .addBtn button {
+  border: none;
+  padding: 10px;
+  display: block;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-image: linear-gradient(to right, #30e907, #02a002, #30e907);
+  background-size: 200%;
+  transition: 0.3s;
+}
+
+.friendsComp .next .controls .addBtn button:hover {
+  background-position: right;
+}
+
+.friendsComp .next .controls .moreIcon,
+.friendsComp .next .controls .msgIcon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, #fafafa, #dadada);
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.friendsComp .next .controls .moreIcon:hover,
+.friendsComp .next .controls .msgIcon:hover {
+  color: #1798fb;
+}

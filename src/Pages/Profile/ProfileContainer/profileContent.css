@@ -1,0 +1,109 @@
+/* ProfileContent */
+
+.profileContent {
+  margin: 10px 0;
+  padding-bottom: 100px;
+}
+
+.photo,
+.profileContent .info {
+  padding: 10px 20px;
+  background-color: #fff;
+  margin: 10px 0;
+}
+
+.profileContent .title {
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.profileContent .info .title .icon {
+  color: #1798fb;
+}
+
+.profileContent .photo .title .icon {
+  color: #60e25b;
+}
+
+.profileContent .info .infoDescription {
+  text-align: center;
+  font-weight: 600;
+  color: #777;
+}
+
+.profileContent .info .infoAbout {
+  list-style: none;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.profileContent .info .infoAbout li {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  gap: 10px;
+  font-size: 18px;
+  color: #777;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.profileContent .info .infoAbout li:last-child {
+  margin-bottom: 0;
+}
+
+.profileContent .info .infoAbout li p span {
+  color: #1798fb;
+}
+
+.profileContent .info .infoAbout li i.follow {
+  transform: rotate(45deg);
+}
+
+@media (max-width: 375px) {
+  .profileContent .info .infoAbout li {
+    font-size: 16px;
+  }
+}
+
+/* End ProfileContent */
+
+/* Photo */
+
+.photo .row div {
+  padding: 5px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.photo .row div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo .viewAll a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1798fb;
+}
+/* End Photo */
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  
+  .profileContent .photo,
+  .profileContent .info {
+    display: none;
+  }
+}

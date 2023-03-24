@@ -1,0 +1,227 @@
+.postContainer {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.postTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.postTop .user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.postTop .user .img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.postTop .user .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.postTop .user .userInfo .userName {
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.postTop .user .userInfo .userName:hover {
+  color: #1798fb;
+}
+
+.postTop .user .userInfo .hours {
+  color: #b1b1b1;
+}
+
+.postTop .more {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaeaea;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.postTop .more:hover {
+  color: #1798fb;
+}
+
+.postContent .postDescription {
+  color: #777;
+}
+.postContent {
+  margin-bottom: 20px;
+}
+.postImages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.postImages .img {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  height: 350px;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 10;
+}
+.postImages .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.postImages .img.last::after {
+  content: "+2";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.418);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.postControl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.postControl .reacts {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.postControl .share,
+.postControl .reacts .comments .icon,
+.postControl .reacts .min-like {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(-50deg, #6cd0ff, #1c2e4c);
+  border-radius: 50%;
+  color: #fff;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.postControl .share {
+  background: linear-gradient(-49deg, #2a2b2a, #9cebb3);
+}
+.postControl .reacts .react-icons {
+  position: absolute;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #2727278e;
+  bottom: 40px;
+  left: 0;
+  border-radius: 50px;
+  z-index: 1000;
+  height: 0px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.postControl .reacts .min-like:hover .react-icons {
+  height: 255px;
+}
+.postControl .reacts .react-icons .icon {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  background-color: #b1b1b1;
+  border-radius: 50%;
+  margin: 5px 0;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.3s;
+}
+.postControl .reacts .react-icons .icon.like {
+  /* background-color: #1798fb; */
+  background: linear-gradient(-50deg, #6cd0ff, #1c2e4c);
+}
+.postControl .reacts .react-icons .icon.love {
+  /* background-color: #ff0720; */
+  background: linear-gradient(45deg, #ff0720, #f95465);
+}
+.postControl .reacts .react-icons .icon.laugh {
+  /* background-color: #f8a247; */
+  background: linear-gradient(-45deg, #ff9a2e, #ffe11c);
+}
+.postControl .reacts .react-icons .icon.sad {
+  /* background-color: #2a2b2a; */
+  background: linear-gradient(-100deg, #b63744, #4e204d);
+}
+.postControl .reacts .react-icons .icon.unhappy {
+  /* background-color: #; */
+  background: linear-gradient(-100deg, #fd5d00, #f5315b);
+}
+.postControl .reacts .react-icons .icon:hover {
+  transform: translateX(5px);
+}
+.postControl .reacts .comments {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.postControl .reacts .comments .icon {
+  background: linear-gradient(10deg, #f2c5ff, #801155);
+}
+
+@media (max-width: 596px) {
+  .postImages {
+    flex-direction: column;
+  }
+  .postControl .share,
+  .postControl .reacts .comments .icon,
+  .postControl .reacts .min-like {
+    width: 30px;
+    height: 30px;
+    font-size: 17px;
+  }
+  .postControl .reacts .react-icons {
+    bottom: 30px;
+    width: 40px;
+  }
+  .postControl .reacts .react-icons .icon {
+    width: 25px;
+    height: 25px;
+    font-size: 15px;
+  }
+  .postControl .reacts .min-like:hover .react-icons {
+    height: 200px;
+  }
+}

@@ -1,0 +1,241 @@
+.post {
+  background-color: #fff;
+  padding: 20px;
+  margin: 7px 0;
+  border-radius: 5px;
+}
+
+.homeContentCol {
+  padding-bottom: 100px !important ;
+}
+.homeSections > div {
+  height: auto;
+  padding: 5px;
+}
+
+.story {
+  width: 160px !important;
+}
+
+.slider {
+  width: 100%;
+  background-color: #fff;
+  height: 230px;
+  padding: 10px !important;
+  border-radius: 10px;
+}
+
+.storyBox {
+  position: relative;
+  max-width: 150px;
+  min-height: 210px;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.storyBox .myImg {
+  height: 210px;
+  background-color: rgba(50, 44, 44, 0.612);
+  border-radius: 5px;
+}
+.storyBox .storyImg {
+  width: 100%;
+  height: 210px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.storyBox .storyImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.storyBox .user {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.236),
+    rgba(0, 0, 0, 0.044)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.storyBox .user .icon,
+.storyBox .user .userImg {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  /* z-index: 100; */
+  margin-bottom: 5px;
+}
+
+.storyBox .user .icon {
+  background-color: #fff;
+  color: #1798fb;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.storyBox .user .userName {
+  color: #fff;
+  font-weight: bold;
+  padding-bottom: 10px;
+  /* z-index: 100; */
+}
+
+.storyBox .user .userImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Post */
+.post .icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  color: #1798fb;
+  background-color: #eaeaea;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.post .text p {
+  color: #9896a4;
+  font-size: 18px;
+  font-weight: 600;
+}
+.post .postInput {
+  position: relative;
+  margin: 15px 0;
+}
+.post .postInput .img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+.post .postInput .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.post .postInput textarea {
+  width: 100%;
+  height: 100%;
+  min-height: 150px;
+  max-height: 150px;
+  background-color: #fefeff;
+  padding: 15px 20px;
+  padding-left: 70px;
+  outline: none;
+  border: 1px solid #f4f4f4;
+  border-radius: 10px;
+}
+
+.post .postInput textarea::placeholder {
+  color: #9896a4;
+  font-weight: 600;
+}
+/* End Post */
+
+/* actions  */
+.post .actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post .actions .created .box {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding: 0 5px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.post .actions .created .box:first-child {
+  margin-left: 0 !important;
+  padding-left: 0;
+}
+
+.post .actions .created .box .icon {
+  margin: 0;
+  background: none;
+}
+
+.post .actions .created .box .icon.one {
+  color: #f5253a;
+}
+
+.post .actions .created .box .icon.two {
+  color: #9cf0b4;
+}
+
+.post .actions .created .box .icon.three {
+  color: #e5a663;
+}
+
+.post .actions .created .box .text p {
+  color: #9896a4;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.post .actions .created .box:hover .text p {
+  color: #1798fb;
+}
+
+.actions .more {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaeaea;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.actions .more:hover i {
+  transition: 0.3s;
+  color: #1798fb;
+}
+/* End actions  */
+
+@media (max-width: 991px) {
+  .friendCol,
+  .sideCol {
+    display: none;
+  }
+  .homeContentCol {
+    width: 100%;
+  }
+}
+@media (max-width: 435px) {
+  .post .actions .created .box .text {
+    display: none;
+  }
+}

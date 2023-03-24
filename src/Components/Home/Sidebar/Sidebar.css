@@ -1,0 +1,71 @@
+.account,
+.morePages,
+.newFeeds {
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  color: #989696;
+  margin-bottom: 7px;
+}
+.account .title,
+.morePages .title,
+.newFeeds .title {
+  padding: 10px;
+  font-weight: 600;
+}
+
+.account .acc,
+.morePages .more,
+.newFeeds .new {
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.account .acc:hover,
+.morePages .more:hover,
+.newFeeds .new:hover {
+  background-color: #f2f2f2e2;
+  color: #1798fb;
+}
+
+.account .acc .icon {
+  font-size: 20px;
+}
+
+.newFeeds .new .icon {
+  width: 40px;
+  height: 40px;
+  background-color: #989696;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.morePages .more .icon {
+  font-size: 20px;
+  color: #1798fb;
+  font-weight: bold;
+}
+
+.newFeeds .new .icon i {
+  font-size: 20px;
+}
+.newFeeds .new .icon.one,
+.newFeeds .new .icon.six {
+  background: linear-gradient(-50deg, #6cd0ff, #1c2e4c);
+}
+
+.newFeeds .new .icon.two {
+  background: linear-gradient(45deg, #f86306, #ffa462);
+}
+
+.newFeeds .new .icon.three {
+  background: linear-gradient(-45deg, #ff9a2e, #ffe11c);
+}
+
+.newFeeds .new .icon.four {
+  background: linear-gradient(-100deg, #b63744, #4e204d);
+}
